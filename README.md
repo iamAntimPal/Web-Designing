@@ -29,7 +29,7 @@ mindmap
 ```
 
 
-```Mermaid
+```mermaid
 mindmap
 root((Project))
      Repo Introduction

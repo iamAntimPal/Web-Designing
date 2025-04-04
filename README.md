@@ -59,5 +59,4 @@ root((Project))
      assets files
           Image files
           SVG files
-          Video files
 ```

@@ -37,7 +37,7 @@ graph TB
         G --> L[Keywords.md]
     end
     subgraph CONTRIBUTORS
-        B -->C[CONTRIBUTORS] --> B[Contribute.md]
+        B --> C[CONTRIBUTORS] --> B[Contribute.md]
         B --> C[Issue Template]
         B --> C[Pull_Request.md]
     end
@@ -47,28 +47,7 @@ graph TB
         J --> L[Keywords.md]
     end
 ```
-    subgraph Security
-        M[Security] --> N[LICENSE (MIT)]
-        M --> O[CODE_OF_CONDUCT.md]
-        M --> P[SECURITY.md]
-    end
 
-    subgraph YML
-        Q[YML] --> R[Greetings.yml]
-        Q --> S[CodeQL.yml]
-    end
-
-    subgraph WIKI
-        T[WIKI] --> U[Homepage.md]
-        T --> V[Footer.md]
-        T --> W[Sidenav.md]
-        T --> X[Pages]
-    end
-
-    subgraph Assets
-        Y[Assets] --> Z[Images]
-        Y --> AA[SVG Files]
-    end
 
 ---
 

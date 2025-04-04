@@ -16,13 +16,14 @@ mindmap
       HTML5
       CSS3
       Flask
+      Django
     Tools & Technologies
-      Git 📂
+      GitHub 📂
+      Git
       Linux 🐧
-      Oracle SQL 💾
+      MySQL 💾
       Data Structures 📚
       Algorithms 🔍
       OOP 🎯
       Distributed Systems 🌐
-      TCP/IP 🔌
 ```

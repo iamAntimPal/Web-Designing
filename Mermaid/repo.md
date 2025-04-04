@@ -11,26 +11,42 @@ graph TD
         B --> C[Readme.md]
         B --> D[.gitattributes]
         B --> E[.gitignore]
-        B[CONTRIBUTORS] --> G[Contribute.md]
-        B --> H[Issue Template]
-        B --> I[Pull_Request.md]
-        B[Search File] --> K[Keywords.txt]
-        B --> L[Keywords.md]
-        
+        A[CONTRIBUTORS] --> G[Contribute.md]
+        G --> H[Issue Template]
+        G --> I[Pull_Request.md]
+        G[Search File] --> K[Keywords.txt]
+        G --> L[Keywords.md]
+    end
+    subgraph Create Repository
+        J[Search File] --> K[Keywords.txt]
+        K --> L[Keywords.md]
     end
 
 ```
- subgraph CONTRIBUTORS
-        F[CONTRIBUTORS] --> G[Contribute.md]
-        F --> H[Issue Template]
-        F --> I[Pull_Request.md]
+```mermaid
+graph TB
+    subgraph  Create Repositery Graph
+        A[Repo Introduction] --> B[Create Repo]
+        B --> C[Readme.md]
+        B --> D[.gitattributes]
+        B --> E[.gitignore]
+        A[CONTRIBUTORS] --> G[Contribute.md]
+        G --> H[Issue Template]
+        G --> I[Pull_Request.md]
+        G[Search File] --> K[Keywords.txt]
+        G --> L[Keywords.md]
+    end
+    subgraph CONTRIBUTORS
+        B -->C[CONTRIBUTORS] --> B[Contribute.md]
+        B --> C[Issue Template]
+        B --> C[Pull_Request.md]
     end
 
     subgraph Search
         J[Search File] --> K[Keywords.txt]
         J --> L[Keywords.md]
     end
-
+```
     subgraph Security
         M[Security] --> N[LICENSE (MIT)]
         M --> O[CODE_OF_CONDUCT.md]

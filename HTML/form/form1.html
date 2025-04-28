@@ -9,16 +9,22 @@
      <h1>Form</h1>
      <p> This form for sita</p>
      <form>
+          <!-- Name field code write here -->
           <label for="name">Name:</label>
-          <input type="text" name="name" placeholder="Enter your name" maxlength="10" required><br><br>
+          <input type="text" name="name" placeholder="Enter your name" maxlength="5" required><br><br>
+          <!-- Email field code write here -->
           <label for="email">Email:</label>
           <input type="email" name="email" placeholder="Enter your Email" maxlength="10" required><br><br>
+          <!-- Password field code write here -->
           <label for="password">Password:</label>
           <input type="password" name="password" placeholder="Enter your password" maxlength="10" required><br><br>
+          <!-- Message field code write here -->
           <label for="message">Message</label>
           <textarea name="message" rows="5" cols="30" placeholder="Enter your message"></textarea><br><br>
+          <!-- Radio button section code write here -->
           <input type="radio" name="gender" value="male"> Male
           <input type="radio" name="gender" value="female"> Female<br><br>
+          <!-- checkbox section code write here -->
           <input type="checkbox" name="hobby" value="reading"> Reading
           <input type="checkbox" name="hobby" value="writing"> Writing<br><br>
           <input type="checkbox" name="hobby" value="traveling"> Traveling<br><br>
@@ -41,8 +47,9 @@
                <option value="Punjab">Punjab</option>
                <option value="Karnataka">Karnataka</option>
           </select><br><br>
-          <label for="date">Date:</label>
+          <!-- Date input field code write here -->          <label for="date">Date:</label>
           <input type="date" name="date"><br><br>
+          <!--Color input field code write here -->
           <input type="color" name="color"><br><br>
           <input type="number" name="number" min="1" max="10"><br><br>
           <input type="range" name="range" min="1" max="100"><br><br>
@@ -52,7 +59,7 @@
           <!-- Telephone input field code write here -->
           <label for="tel">Phone:</label>
           <!-- Telephone input field code write here -->
-          <input type="tel" name="phone" placeholder="Enter your phone number"><br><br>
+          <input type="tel" name="phone" placeholder="Enter your phone number" maxlength="10" minlength="10"><br><br>
           <!-- Search input field code write here -->
           <label for="search">Search:</label>
           <input type="search" name="search" placeholder="Search"><br><br>
@@ -64,7 +71,7 @@
           <!-- Image input field code write here -->
           <input type="hidden" name="hidden" value="hidden value"><br><br>
 
-          <input type="button" value="Button" onclick="alert('Button clicked!')"><br><br>
+          <input type="button" value="Button" onclick="alert(' hello ankit! Button clicked! ')"><br><br>
 
           <input type="reset" value="Reset" onclick="alert('Reset clicked!')"><br><br>
 

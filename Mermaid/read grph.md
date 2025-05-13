@@ -1,0 +1,102 @@
+```mermaid
+flowchart TD
+  %% Module 1
+  subgraph M1 [Module 1: Introduction & Setup]
+    M1A["What is Python?\n- History & Philosophy\n- Use Cases"]
+    M1B["Installing Python\n- Windows/Mac/Linux\n- IDEs & Editors"]
+    M1C["Running Python Code\n- REPL\n- Scripts vs Notebooks\n- CLI Invocation"]
+  end
+
+  %% Module 2
+  subgraph M2 [Module 2: Python Basics]
+    M2A["Syntax & Semantics\n- Indentation & Blocks\n- Comments"]
+    M2B["Data Types & Variables\n- Numbers, Strings, Boolean"]
+    M2C["Operators\n- Arithmetic, Comparison, Logical"]
+    M2D["Control Flow\n- if/elif/else\n- for/while loops\n- break/continue"]
+    M2E["Comprehensions\n- List, Dict, Set"]
+    M2F["Built-in Functions & Modules\n- print(), type(), len(), range()\n- import"]
+  end
+
+  %% Module 3
+  subgraph M3 [Module 3: Data Structures]
+    M3A["Lists & Tuples\n- Creation, Indexing, Slicing\n- Methods"]
+    M3B["Sets\n- Creation, Operations"]
+    M3C["Dictionaries\n- Key/Value Access\n- Methods"]
+    M3D["Advanced Collections\n- namedtuple, deque, defaultdict, Counter"]
+    M3E["Performance Considerations"]
+  end
+
+  %% Module 4
+  subgraph M4 [Module 4: Functions & Scripting]
+    M4A["Defining Functions\n- def, params, return"]
+    M4B["Lambda & Higher-Order\n- lambda, map, filter, reduce"]
+    M4C["Docstrings & Type Hints"]
+    M4D["Scripting Essentials\n- shebang, sys.argv, argparse, logging"]
+    M4E["Packaging Scripts\n- __main__ guard"]
+  end
+
+  %% Module 5
+  subgraph M5 [Module 5: Object-Oriented Programming]
+    M5A["Classes & Instances\n- __init__, attributes"]
+    M5B["Encapsulation\n- public/protected/private"]
+    M5C["Inheritance & super()"]
+    M5D["Polymorphism & Overriding"]
+    M5E["Magic Methods\n- __str__, __repr__, __eq__, __len__"]
+    M5F["Class & Static Methods"]
+    M5G["Design Patterns (Intro)"]
+  end
+
+  %% Module 6
+  subgraph M6 [Module 6: File Handling]
+    M6A["Text Files\n- open(), read(), write(), with"]
+    M6B["Binary Files\n- 'rb','wb','ab' modes"]
+    M6C["CSV & JSON\n- csv, json modules"]
+    M6D["Path Handling\n- os.path, pathlib, glob"]
+  end
+
+  %% Module 7
+  subgraph M7 [Module 7: Error & Exception Handling]
+    M7A["Errors vs Exceptions"]
+    M7B["Try/Except/Else/Finally"]
+    M7C["Catching Specific Exceptions"]
+    M7D["Raising Exceptions\n- raise"]
+    M7E["Custom Exception Classes"]
+    M7F["Best Practices"]
+  end
+
+  %% Module 8
+  subgraph M8 [Module 8: Modules, Packages & Virtual Envs]
+    M8A["Creating & Importing Modules"]
+    M8B["Packages & __init__.py"]
+    M8C["Std Library Overview\n- math, datetime, itertools"]
+    M8D["Third-Party & venv\n- pip, virtualenv"]
+    M8E["setup.py / pyproject.toml"]
+  end
+
+  %% Module 9
+  subgraph M9 [Module 9: Testing & Debugging]
+    M9A["Debugging Tools\n- print, pdb"]
+    M9B["Writing Tests\n- unittest, pytest"]
+    M9C["Test Coverage\n- coverage.py"]
+  end
+
+  %% Module 10
+  subgraph M10 [Module 10: Advanced Scripting Topics]
+    M10A["Regular Expressions\n- re module"]
+    M10B["OS & Subprocess\n- os, subprocess"]
+    M10C["Concurrency & Async\n- threading, multiprocessing, asyncio"]
+    M10D["Working with APIs\n- requests, JSON parsing"]
+    M10E["Logging & Configuration\n- logging, configparser, YAML"]
+  end
+
+  %% Module 11
+  subgraph M11 [Module 11: Final Project & Best Practices]
+    M11A["Project Planning & Structure"]
+    M11B["Code Style & Linters\n- PEP 8, flake8, pylint"]
+    M11C["Documentation\n- Docstrings, Sphinx"]
+    M11D["Version Control & CI/CD\n- Git, GitHub Actions"]
+  end
+
+  %% Flow
+  M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8 --> M9 --> M10 --> M11
+```

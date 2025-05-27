@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antim | Data Science Portfolio</title>
+  <style>
+    /* CSS Variables for themes */
+    :root {
+      --bg: #ffffff;
+      --text: #2d2d2d;
+      --accent: #007BFF;
+      --section-bg: #f8f8f8;
+      --skill-bg: #e0e0e0;
+    }
+    [data-theme="dark"] {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --accent: #66aaff;
+      --section-bg: #2a2a2a;
+      --skill-bg: #3a3a3a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { font-family: Arial, sans-serif; background: var(--bg); color: var(--text); }
+    a { text-decoration: none; color: var(--accent); }
+    ul, ol { list-style: none; }
+    button { cursor: pointer; }
+
+    /* Header */
+    header { position: fixed; width: 100%; background: var(--section-bg); padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+    nav a { margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: var(--text); }
+    .btn-resume, .btn-toggle { padding: 8px 16px; border: 2px solid var(--accent); border-radius: 4px; background: transparent; color: var(--accent); font-weight: 500; transition: background 0.3s, color 0.3s; }
+    .btn-resume:hover, .btn-toggle:hover { background: var(--accent); color: var(--bg); }
+
+    /* Sections */
+    section { padding: 100px 40px; }
+    #home { text-align: center; margin-top: 80px; }
+    #home h1 { font-size: 3.5rem; margin-bottom: 20px; }
+    #home p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+
+    #about .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .skill { display: flex; align-items: center; background: var(--skill-bg); padding: 10px 15px; border-radius: 20px; font-size: 0.9rem; opacity: 0; transform: translateY(20px); animation: fadeInUp 0.5s forwards; }
+    .skill img { width: 20px; height: 20px; margin-right: 8px; }
+    .skill:nth-child(1) { animation-delay: 0.1s; }
+    .skill:nth-child(2) { animation-delay: 0.2s; }
+    .skill:nth-child(3) { animation-delay: 0.3s; }
+    .skill:nth-child(4) { animation-delay: 0.4s; }
+    .skill:nth-child(5) { animation-delay: 0.5s; }
+    .skill:nth-child(6) { animation-delay: 0.6s; }
+    .skill:nth-child(7) { animation-delay: 0.7s; }
+    .skill:nth-child(8) { animation-delay: 0.8s; }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #projects h2, #about h2, #home h1 { color: var(--accent); }
+    #projects ol { max-width: 800px; margin: 0 auto; padding-left: 20px; }
+    #projects li { margin-bottom: 20px; }
+    #projects li div span { margin-right: 8px; font-size: 0.9rem; color: var(--text); }
+
+    /* Footer */
+    footer { background: var(--section-bg); text-align: center; padding: 40px 20px; }
+    .socials a { margin: 0 10px; font-size: 1.5rem; color: var(--text); transition: color 0.3s; }
+    .socials a:hover { color: var(--accent); }
+
+    /* Custom Cursor */
+    .cursor { width: 20px; height: 20px; border: 2px solid var(--accent); border-radius: 50%; position: fixed; pointer-events: none; transform: translate(-50%, -50%); transition: transform .1s ease; z-index: 10000; }
+    .cursor-hover { transform: translate(-50%, -50%) scale(2); }
+  </style>
+</head>
+<body>
+  <div class="cursor"></div>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <div>
+      <button class="btn-toggle" id="theme-toggle">Dark Mode</button>
+      <a href="/resume.pdf" class="btn-resume">Resume</a>
+    </div>
+  </header>
+
+  <section id="home">
+    <h1>Antim</h1>
+    <p>A Data Scientist transforming raw data into actionable insights with scalable ML solutions.</p>
+  </section>
+
+  <section id="about">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>Python</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R"/>R</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>Docker</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>Git</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>JavaScript</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS"/>Tailwind CSS</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>PostgreSQL</div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/>TensorFlow</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li><a href="#">Titanic Survival Prediction</a><div><span>#Python</span><span>#scikit-learn</span><span>#pandas</span></div></li>
+      <li><a href="#">Movie Recommendation System</a><div><span>#Surprise</span><span>#Flask</span><span>#CollaborativeFiltering</span></div></li>
+      <li><a href="#">NLP Sentiment Analysis</a><div><span>#BERT</span><span>#Streamlit</span><span>#NLP</span></div></li>
+      <li><a href="#">Stock Price Forecasting</a><div><span>#ARIMA</span><span>#LSTM</span><span>#TimeSeries</span></div></li>
+      <li><a href="#">Customer Segmentation</a><div><span>#KMeans</span><span>#RFM</span><span>#Clustering</span></div></li>
+    </ol>
+  </section>
+
+  <footer>
+    <h2>Get In Touch</h2>
+    <div class="socials">
+      <a href="mailto:your.email@example.com">✉️</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">🐙</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">🔗</a>
+    </div>
+    <p>©2025 Antim</p>
+  </footer>
+
+  <script>
+    // Custom Cursor Animation
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, .btn-resume, .btn-toggle').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+    });
+
+    // Dark/Light Mode Toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      const root = document.documentElement;
+      if (root.getAttribute('data-theme') === 'light') {
+        root.setAttribute('data-theme', 'dark');
+        toggleBtn.textContent = 'Light Mode';
+      } else {
+        root.setAttribute('data-theme', 'light');
+        toggleBtn.textContent = 'Dark Mode';
+      }
+    });
+  </script>
+</body>
+</html>
